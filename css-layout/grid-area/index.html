@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+          'header header header header'
+          'main main . sidebar'
+          'footer footer footer footer';
+      }
+
+      header,
+      main,
+      footer {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      header {
+        text-align: center;
+        background-color: lightgoldenrodyellow;
+
+        grid-area: header;
+      }
+
+      main {
+        text-align: justify;
+        text-indent: 50px;
+        background-color: blanchedalmond;
+
+        grid-area: main;
+      }
+
+      aside {
+        background-color: blanchedalmond;
+
+        grid-area: sidebar;
+      }
+
+      footer {
+        text-align: center;
+        background-color: bisque;
+
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>Welcome to My Website</p>
+      </header>
+      <main>
+        <h1>Medan Code</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+          cupiditate fugit natus minus sequi officia vel placeat perspiciatis
+          optio, est voluptatibus? Possimus labore dolores, expedita mollitia
+          repellendus dolorum beatae blanditiis? Quas nobis quis consequatur,
+          voluptatibus impedit necessitatibus quidem, ullam aliquam facere vitae
+          inventore! Saepe soluta distinctio autem voluptatibus quibusdam
+          adipisci quidem esse placeat possimus totam, quaerat eum laboriosam
+          reiciendis corporis? Eum nostrum eveniet necessitatibus minima! Harum,
+          sequi sed? Modi, quae accusamus. Deleniti beatae similique, obcaecati
+          doloribus adipisci tempora fugit labore totam. Incidunt modi nemo
+          error corporis maiores reprehenderit eos nesciunt! Delectus,
+          temporibus laudantium unde nisi officia sapiente maxime beatae.
+          Perferendis inventore deleniti dolorem at quia eius impedit repellat
+          modi corporis adipisci, cupiditate nihil nobis porro repudiandae
+          veniam omnis quod maxime.
+        </p>
+      </main>
+      <aside>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus
+          ipsum quisquam libero amet atque. Mollitia aut natus explicabo modi
+          ipsum dignissimos id, impedit, consequatur minus expedita veritatis
+          doloremque repudiandae.
+        </p>
+      </aside>
+      <footer>Copyright@2024</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border vs Outline</title>
+    <style>
+      .box-border {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 5px solid blue;
+        margin: 20px;
+      }
+
+      .box-outline {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        margin: 20px;
+        outline: 5px solid red;
+      }
+
+      .box-both {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 5px solid blue;
+        outline: 5px solid red;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Border vs Outline</h1>
+
+    <div class="box-border">This box has a border</div>
+    <div class="box-outline">This box has an outline</div>
+    <div class="box-both">This box has both a border and an outline</div>
+  </body>
+</html>
